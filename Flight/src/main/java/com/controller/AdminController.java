@@ -48,6 +48,7 @@ public class AdminController {
 			locationMaster.setName(city_name);
 			if(adminService.addLocation(locationMaster))
 				return null;
+			System.out.println("This is changed");
 		}	
 		return new ModelAndView("admin_locationMaster");
 	}
